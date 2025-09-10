@@ -1,0 +1,13 @@
+const x=9
+console.log(x + ' + 2 =', x + 2)
+console.log(x + ' + 2 =', x + 2)
+console.log(x + ' - 2 =', x - 2)
+console.log(x + ' - 7 =', x - 7)
+console.log(x + ' * 13 =', x * 13)
+console.log(x + ' * 2 =', x * 2)
+console.log(x + ' / 2 =', x / 2)
+console.log(x + ' / 5 =', x / 5)
+console.log(x + ' mod 7 =', x % 7)
+console.log(x + ' mod 2 =', x % 2)
+console.log(x + ' ^ 4 =', x ** 4)
+console.log(x + ' ^ 2 =', x ** 2)
