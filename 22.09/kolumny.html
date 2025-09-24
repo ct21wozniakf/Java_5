@@ -13,19 +13,27 @@
 
         .side_column{
             background-color: #D291BC;
-            width: 24.5%;
+            width: 25%;
+            box-sizing: border-box;
         }
         .main_column{
             background-color: #FEC8D8;
             width: 50%;
+            box-sizing: border-box;
         }
         footer{
             background-color: #957DAD;
+            padding: 10px;
         }
         section{
             float: left;
-            
+            padding: 5px;
             margin: 0;
+        }
+
+        .row{
+            width: 100%;
+            margin-bottom: 119px;
         }
 
 
@@ -39,7 +47,9 @@
 <header>
     <h1 style="margin: 0">Nagłówek strony</h1>
 </header>
+
 <main class="row">
+    
     <section class="side_column">
         <h1>Kolumna I</h1>
     </section>
@@ -47,9 +57,12 @@
         <h1>Kolumna II</h1>
     </section>
     <section class="side_column">
-        <h1>Kolumna III</h1>
+        <h1 id="kolum">Kolumna III</h1>
     </section>
+
 </main>
+
+
 <footer>
     <h1>Stopka</h1>
 </footer>
