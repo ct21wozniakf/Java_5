@@ -1,9 +1,9 @@
 1.
  Za pomocą jednej linijki kodu JavaScript, wyświetl w konsoli kolekcję elementów img jakie są na stronie.
-	document.getElementsByTagName('img')
+	console.log(document.querySelectorAll('img'))
 2.
  Za pomocą jednej linijki kodu JavaScript, wyświetl w konsoli kolekcję wszystkich linków jakie są na stronie.
-	document.getElementsByTagName('a')
+	console.log(document.querySelectorAll('a'))
 3.
  Za pomocą jednej linijki kodu JavaScript, zmień w elemencie mojElement czcionkę na Arial
 	mojElement.style.fontFamily='Arial'
@@ -15,7 +15,7 @@
 	document.getElementById('answer').style.color='red'	
 6.
  Jak, w kontekście języka JavaScript, rozwijamy skrót DOM?
-	Document Object Method
+	Document Object Model
 7.
  Jaką metodą JavaScript stworzymy element "span"? Podaj przykład.
 	document.createElement('span')
