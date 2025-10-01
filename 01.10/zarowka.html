@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    fieldset{
+        width: 100%;
+        border: 1px solid pink;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: -20px;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0;
+    }
+    th{
+        text-align: center;
+        height: 50px;
+    }
+    .ruz{
+        background-color: pink;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+<fieldset>
+
+<img src="zar1.png" id="zar" width="300" height="300">
+
+<table>
+
+<tr>
+<th class="ruz"><input type="button" value="Włącz" id="wl"></th>
+<th class="ruz"><input type="button" value="Wyłącz" id="wyl"></th>
+</tr>
+
+<tr>
+    <th><input for="wlacz" name="wlwyl" type="radio" id="wlacz" value="pokaz">
+    <label for="wlacz">Włączono</label></th>
+    <th><input for="wylacz" name="wlwyl" type="radio" id="wylacz" value="pokaz" checked>
+    <label for="wylacz">Wyłączono</label></th>
+</tr>
+
+<tr>
+    <th class="ruz" colspan="2"><input type="checkbox" id="check" for="check"><label for="check" id="tekst">Wyłączono</label></th>
+</tr>
+
+</table>
+
+
+
+
+
+
+</fieldset>
+
+<script src="zarowka.js"></script>
+
+</body>
+</html>
