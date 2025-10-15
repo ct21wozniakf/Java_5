@@ -1,0 +1,8 @@
+abs - Oblicza wartość bezwzględną z podanej liczby.
+ceil - zaokrągla liczby zawsze w górę
+min - zwraca najnizszy podany numer albo nieskonczonosc jesli nic nie bylo wpisane
+max -  zwraca najwyzszy podany numer albo nieskonczonosc jesli nic nie bylo wpisane
+floor - zawsze zaokragla w dol
+pow - zwraca wynik potegowania podanych liczb
+round - zaokragla to nablizszej liczby calkowitej
+sqrt - zwraca wynik pierwiastkowania
