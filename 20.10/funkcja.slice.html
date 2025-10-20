@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja slice()</legend>
+
+<p id="tekst">Mikołaj Kopernik - polski polihistor pochodzenia niemieckiego</p>
+
+<p id="drugi"></p>
+
+<button id="gj">Wytnij znaki od 26 do 36</button>
+
+<p id="trzeci"></p>
+
+<button id="gd">Wytnij znaki od końca: od 5 do 12</button>
+
+
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst')
+let xdxd = xd.textContent
+
+let opa = document.getElementById('drugi')
+let kopa = document.getElementById('trzeci')
+
+let guzik = document.getElementById('gj')
+let guzik2 = document.getElementById('gd')
+
+
+guzik.addEventListener('click', function() {
+    opa.innerText = xdxd.slice(26, 36)
+    opa.style.fontSize = "30px"
+    opa.style.fontWeight = "bold"
+    opa.style.textShadow = "3px 3px 5px red"
+})
+
+guzik2.addEventListener('click', function() {
+    kopa.innerText = xdxd.slice(-12, -5)
+    kopa.style.fontSize = "30px"
+    kopa.style.fontStyle = "italic"
+    kopa.style.textShadow = "2px 2px blue"
+})
+
+</script>
+
+
+
+
+</body>
+</html>

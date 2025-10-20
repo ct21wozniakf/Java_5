@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>Właściwość length</legend>
+
+<p id="za">Jan Chryzostom Pasek z Gosławic herbu Doliwa</p>
+
+<p id="pus"></p>
+
+<button id="policz">Policz znaki</button>
+
+</fieldset>
+
+<script>
+
+let guzik = document.getElementById('policz')
+let pusty = document.getElementById('pus')
+
+let je = document.getElementById('za')
+let de = je.textContent
+let n = de.length
+
+
+guzik.addEventListener('click', function() {
+
+    pusty.innerHTML = "Tekst powyżej ma długość " + n + " znaki"
+    pusty.style.backgroundColor = "#ffdfd3"
+    pusty.style.padding = "5px"
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja substr()</legend>
+
+<p id="tekst">Mieszko I - władca Polski z dynastii Piastów</p>
+
+<p id="drugi"></p>
+
+<button id="gj">Wytnij znaki od 27 do 36</button>
+
+<p id="trzeci"></p>
+
+<button id="gd">Wytnij znaki od 37 do końca</button>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst')
+let xdxd = xd.textContent
+
+let opa = document.getElementById('drugi')
+let kopa = document.getElementById('trzeci')
+
+let guzik = document.getElementById('gj')
+let guzik2 = document.getElementById('gd')
+
+
+guzik.addEventListener('click', function() {
+    opa.innerText = xdxd.substr(27, 9)
+    opa.style.color = "yellow"
+    opa.style.backgroundColor = "dodgerblue"
+    opa.style.padding = "5px"
+
+    opa.style.display = "inline-block"
+    guzik.style.display = "block"
+})
+
+guzik2.addEventListener('click', function() {
+    kopa.innerText = xdxd.substring(37)
+    kopa.style.color = "yellow"
+    kopa.style.backgroundColor = "tomato"
+    kopa.style.padding = "5px"
+
+    kopa.style.display = "inline-block"
+    guzik2.style.display = "block"
+})
+
+</script>
+
+</body>
+</html>

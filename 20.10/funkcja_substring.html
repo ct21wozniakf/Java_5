@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja substring()</legend>
+
+<p id="tekst">Fryderyk Franciszek Chopin - polski kompozytor i pianista</p>
+
+<p id="drugi"></p>
+
+<button id="gj">Wytnij znaki od 9 do 19</button>
+
+<p id="trzeci"></p>
+
+<button id="gd">Wytnij znaki od 27 do końca</button>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst')
+let xdxd = xd.textContent
+
+let opa = document.getElementById('drugi')
+let kopa = document.getElementById('trzeci')
+
+let guzik = document.getElementById('gj')
+let guzik2 = document.getElementById('gd')
+
+
+guzik.addEventListener('click', function() {
+    opa.innerHTML = xdxd.substring(9, 19)
+    opa.style.border = "4px dotted crimson"
+    opa.style.padding = "8px"
+    
+    opa.style.display = "inline-block"
+    guzik.style.display = "block"
+})
+
+guzik2.addEventListener('click', function() {
+    kopa.innerText = xdxd.substring(27)
+    kopa.style.border = "3px double crimson"
+    kopa.style.padding = "8px"
+
+    kopa.style.display = "inline-block"
+    guzik2.style.display = "block"
+})
+
+</script>
+
+</body>
+</html>
