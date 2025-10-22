@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja replace()</legend>
+
+<p id="tekst">Microsoft Edge - przeglądarka internetowa firmy Microsoft</p>
+
+<button id="gj">Zastąp słowa 'Edge' słowem 'Janusz Explorer'</button>
+
+<br><br>
+
+<button id="gd">Zastąp każde słowo 'Microsoft' słowem 'JanuszPol'</button>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst');
+
+let guzik = document.getElementById('gj');
+let guzik2 = document.getElementById('gd');
+
+guzik.addEventListener('click', function () {
+    xd.innerText = xd.innerText.replace(/Edge/g, "JanuszExplorer");
+});
+
+guzik2.addEventListener('click', function () {
+    xd.innerText = xd.innerText.replace(/Microsoft/g, "JanuszPol");
+});
+
+</script>
+
+</body>
+</html>

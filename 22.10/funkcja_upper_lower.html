@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja upper() i lower()</legend>
+
+<p id="tekst">Euklides z Aleksandrii (stgr. Εὐκλείδης) - grecki matematyk</p>
+
+<button id="gj">Zamień wszystkie litery na wielkie</button>
+
+<br><br>
+
+<button id="gd">Zamień wszystkie litery na małe</button>
+
+<br><br>
+
+<button id="gt">Przywróć początkową wielkość znaku</button>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst');
+let xdxd = xd.textContent
+
+let guzik = document.getElementById('gj');
+let guzik2 = document.getElementById('gd');
+let guzik3 = document.getElementById('gt');
+
+guzik.addEventListener('click', function () {
+    xd.innerText = xdxd.toUpperCase()
+});
+
+guzik2.addEventListener('click', function () {
+    xd.innerText = xdxd.toLowerCase()
+});
+
+guzik3.addEventListener('click', function () {
+   xd.innerText = xdxd
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja padStart() padEnd()</legend>
+
+<p id="tekst">Stefan Banach</p>
+
+<button id="gj">Wypełnij tekst na początku podkreśleniami, aby miał długość 20 znaków</button>
+
+<br><br>
+
+<button id="gd">Wypełnij teskt na końcu kropkami, aby miał długość 30 znaków</button>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst');
+
+let guzik = document.getElementById('gj');
+let guzik2 = document.getElementById('gd');
+
+guzik.addEventListener('click', function () {
+    xd.innerText = xd.innerText.padStart(20, "_")
+});
+
+guzik2.addEventListener('click', function () {
+    xd.innerText = xd.innerText.padEnd(30, ".");
+});
+
+</script>
+
+</body>
+</html>

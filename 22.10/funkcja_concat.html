@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja concat()</legend>
+
+<p id="tekst">Czuwaj</p>
+
+<button id="gj">Doklej wykrzyknik (!) na końcu tekstu</button>
+
+<br><br>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst');
+
+
+let guzik = document.getElementById('gj');
+
+
+guzik.addEventListener('click', function () {
+    xd.textContent = xd.textContent.concat('!')
+});
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<fieldset>
+<legend>funkcja split()</legend>
+
+<p id="tekst">0|1|1|2|3|5|8</p>
+
+<button id="gj">Utwórz tablicę liczb i wyświetl ją w konsoli</button>
+
+<p id="tekst2">Jak nazywamy rozgrywanie w całości albo we fragmentach danej gry komputerowej z zamiarem jak najszybszego jej ukończnenia? Speedrun</p>
+
+<button id="gd"> Utwórz tablicę wyrazów, ale w konsoli wyświetl tylko 17 pierwszych elementów tablicy</button>
+
+<br><br>
+
+</fieldset>
+
+<script>
+
+let xd = document.getElementById('tekst');
+let xd2 = document.getElementById('tekst2');
+
+
+let guzik = document.getElementById('gj');
+let guzik2 = document.getElementById('gd');
+
+
+guzik.addEventListener('click', function () {
+    let tablica = xd.innerHTML.split("|")
+    console.log(tablica)
+});
+
+guzik2.addEventListener('click', function () {
+    let tablica2 = xd2.innerHTML.split(" ",17)
+    console.log(tablica2)
+});
+
+
+
+</script>
+
+</body>
+</html>
