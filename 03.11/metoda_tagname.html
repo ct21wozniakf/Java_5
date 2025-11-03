@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<div id="di">
+    <p>Elementu del <del>używamy do tworzenia tekstu przekreślonego</del></p>
+    <p>Elementu code <code>używamy do tworzenai tekstu o stałej szerokości czcionki</code></p>
+    <p>Elementu strong <strong>używamy do tworzenia tesktu pogrubionego</strong></p>
+    <p>Elementu em <em>używamy do tworzenia tekstu z emfazą, czyli takiego, na który chcemy położyć większy nacisk</em></p>
+</div>
+<button id="psycisk">Znajdź i zmień</button>
+
+<script>
+
+let guzik = document.getElementById('psycisk')
+
+guzik.addEventListener('click', function() {
+    let xd = document.getElementById('di')
+    let elementy = xd.querySelectorAll('*')
+    console.log(elementy)
+    for(let xpp of elementy){
+        
+    }
+})
+</script>
+
+</body>
+</html>
