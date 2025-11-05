@@ -23,7 +23,9 @@ guzik.addEventListener('click', function() {
     let elementy = xd.querySelectorAll('*')
     console.log(elementy)
     for(let xpp of elementy){
-        
+        if(xpp.tagName.toLowerCase() === 'strong'){
+            xpp.style.border = "10px dotted green"
+        }
     }
 })
 </script>

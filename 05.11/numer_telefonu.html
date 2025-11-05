@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .blu{
+            filter: blur(6px);
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Numer telefonu: 12<span>3</span>-<span>456</span>-<span>789</span></h1>
+
+<input type="checkbox" id="che"><label for="che">Pokaż cały numer telefonu</label>
+
+
+
+<script>
+    let zaznacz = document.getElementById("che")
+    let cyfry = document.querySelectorAll('span')
+ 
+    cyfry.forEach(span => span.classList.add("blu"));
+
+    zaznacz.addEventListener("change", function() {
+      if (this.checked) {
+        cyfry.forEach(span => span.classList.remove("blu"));
+      } else {
+        cyfry.forEach(span => span.classList.add("blu"));
+      }
+    });
+</script>
+</body>
+</html>
