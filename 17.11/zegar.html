@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .opa{
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+<h3>Miara kąta między wskazówkami zegara</h3>
+
+<div class="opa">
+
+<p><b>Miarę kąta między wskazówką minutową a godzinową można obliczyć według wzoru:</b></p>
+
+<img src="task_689.png" alt="">
+
+</div>
+
+<div class="opa" style="display: inline-block;">
+
+<label for="godz"><b>Godziny h &isin; [0, 11]</b></label>
+<br>
+<input type="range" id="godz" min="0" max="11" step="1" value="0">
+<br>
+<p id="godzn" style="border-bottom: 1px solid black; margin: 0; text-align: right;"></p>
+
+
+</div>
+
+<div class="opa" style="display: inline-block;">
+
+<label for="minu"><b>Minuty m &isin; [0, 60]</b></label>
+<br>
+<input type="range" id="minu" min="0" max="60" step="1" value="0">
+<p id="minun" style="border-bottom: 1px solid black; margin: 0; text-align: right;">0</p>
+
+
+</div>
+
+<br>
+
+<div style="border: 2px solid black; width: 300px; border-radius: 50%; height: 300px;">
+
+
+</div>
+<br>
+
+<div class="opa" style="display: inline-block; width: 157px; height: 45px;">
+
+<label for="kont"><b>Kąt</b></label>
+<br>
+<p style="border-bottom: 1px solid black; margin: 0; text-align: right;"><span id="kontu"></span>&deg;
+</p>
+
+
+</div>
+
+<script src="zegar.js"></script>
+
+</body>
+</html>
