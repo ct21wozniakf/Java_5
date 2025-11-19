@@ -1,0 +1,17 @@
+body{
+    background-color: lightyellow;
+    color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+fieldset,button,input{
+    border: 2px solid coral;
+}
+input{
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    width: 100px;
+}
+button{
+    cursor: pointer;
+}

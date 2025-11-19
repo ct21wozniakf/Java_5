@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ciag_arytmetyczny.css">
+</head>
+<body>
+  
+    <fieldset>
+        <legend>Suma n początkowych wyrazów ciągu arytmetycznego</legend>
+
+        <p>Podaj pierwszy wyraz ciągu: <label for="pwyraz">a₁ = </label><input type="number" id="pwyraz" step="0.1"> (a₁ ∈ R)</p>
+        <p><label for="dwyraz">Podaj drugi wyraz ciągu: </label>a₂ = <input type="number" id="dwyraz" step="0.1"> (a₂ ∈ R)</p>
+        <p>Dla ilu wyrazów ciągu obliczyć sumę: <label for="ilewyraz">n = </label><input type="number" id="ilewyraz" min="1" step="1"> (n ∈ N, n ≥ 1)</p>
+
+        <button id="psycisk">Dla danego n wypisz max 3 początkowe i 3 końcowe wyrazy ciągu oraz oblicz jego sumę</button>
+
+        <div id="pojemnik"></div>
+
+        <p id="tekst"></p>
+
+    </fieldset>
+
+
+<script src="ciag_arytmetyczny.js"></script>
+
+</body>
+</html>
